@@ -3,7 +3,7 @@
 
 - name: Insert network.md file
   ansible.builtin.template:
-    src: network.md
+    src: network.j2
     dest: "/auto-gen-docs-ansible/network.md"
     owner: "root"
     group: "root"

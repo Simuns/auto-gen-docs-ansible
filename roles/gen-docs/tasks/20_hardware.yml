@@ -4,7 +4,7 @@
 
 - name: Insert hardware.md file
   ansible.builtin.template:
-    src: hardware.md
+    src: hardware.j2
     dest: "/auto-gen-docs-ansible/hardware.md"
     owner: "root"
     group: "root"

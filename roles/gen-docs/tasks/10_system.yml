@@ -7,7 +7,7 @@
 
 - name: Insert system.md file
   ansible.builtin.template:
-    src: system.md
+    src: system.j2
     dest: "/auto-gen-docs-ansible/system.md"
     owner: "root"
     group: "root"
