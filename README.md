@@ -25,24 +25,24 @@
 
 ## IPV4
 ### Default interface: eth0
-- gateway: <redacted>
-- address: <redacted>
-- broadcast: <redacted>
+- gateway: REDACTED
+- address: REDACTED
+- broadcast: REDACTED
 - netmask: 255.255.255.0
-- network: <redacted>
-- macaddress: <redacted>
+- network: REDACTED
+- macaddress: REDACTED
 - mtu: 1500
 - type: ether
 - alias: eth0
-<redacted>
+REDACTED
 ### DNS:
-- nameservers: ['<redacted>', '<redacted>', '<redacted>']
+- nameservers: ['REDACTED', '<'REDACTED', 'REDACTED']
 - search: ['members.linode.com'] 
 - domain: members.linode.com
 - options {'rotate': True}
   
 ##System
-* Hostname: <redacted>
+* Hostname: REDACTED
 * System:Linux
     - Path: /etc/os-release
     - Variety: Debian
