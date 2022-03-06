@@ -15,8 +15,3 @@
     src: "/auto-gen-docs-ansible/hardware.md"
     dest: "docs/{{ inventory_hostname }}/hardware.md"
     flat: yes
-
-- name: Write down facts
-  template:
-    src: "facts_tpl.j2"
-    dest: "/auto-gen-docs-ansible/facts.log"
