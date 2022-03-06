@@ -55,3 +55,4 @@ REDACTED
 - UUID: NA
   
  
+## Author: Símun Højgaard Lutzen | simunhojgaard@gmail.com
