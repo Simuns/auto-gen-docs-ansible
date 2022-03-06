@@ -1,0 +1,16 @@
+---
+
+
+- name: Insert network.md file
+  ansible.builtin.template:
+    src: network.md
+    dest: "/auto-gen-docs-ansible/network.md"
+    owner: "root"
+    group: "root"
+    mode: '0740'
+
+- name: Fetch the system.md to ansible-host docs folder 
+  fetch: 
+    src: "/auto-gen-docs-ansible/network.md"
+    dest: "docs/{{ inventory_hostname }}/network.md"
+    flat: yes

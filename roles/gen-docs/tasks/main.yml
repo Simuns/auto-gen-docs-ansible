@@ -1,1 +1,5 @@
-- include_tasks: 10_system-facts.yml
+---
+#- include_tasks: 10_system.yml
+- include_tasks: 20_hardware.yml
+#- include_tasks: 30_network.yml
+

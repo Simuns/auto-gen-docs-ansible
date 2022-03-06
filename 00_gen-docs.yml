@@ -1,6 +1,7 @@
-- hosts: backup_servers, targets 
+- hosts:  targets 
   gather_facts: true
-
+  become: yes
+  become_method: sudo
 
 
   roles: 
