@@ -10,7 +10,7 @@
     group: "root"
     mode: '0740'
 
-- name: Fetch the system.md to ansible-host docs folder 
+- name: Fetch the hardware.md to ansible-host docs folder 
   fetch: 
     src: "/auto-gen-docs-ansible/hardware.md"
     dest: "docs/{{ inventory_hostname }}/hardware.md"
