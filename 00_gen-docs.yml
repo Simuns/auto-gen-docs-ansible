@@ -1,0 +1,9 @@
+- hosts: backup_servers, targets 
+  gather_facts: true
+
+
+
+  roles: 
+     - gen-docs 
+     
+  tasks:

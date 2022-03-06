@@ -1,0 +1,1 @@
+- include_tasks: 10_system-facts.yml
