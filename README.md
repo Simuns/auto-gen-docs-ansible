@@ -4,7 +4,7 @@
 #### Point playbook at your linux infrastructure and get automatic documentation written in Markdown.
 ---
 # Following values get documented for each host 
-####This is a linode host example. I have retracted all sensitive information
+#### This is a linode host example. I have redacted all sensitive information
 
 ## Hardware
 - Product Name: Standard PC (Q35 + ICH9, 2009)
