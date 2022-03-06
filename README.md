@@ -1,5 +1,5 @@
 # auto-gen-docs-ansible
-##Automatic documentation of infrastructure
+## Automatic documentation of infrastructure
 
 #### Point playbook at your linux infrastructure and get automatic documentation written in Markdown.
 ---
@@ -42,7 +42,7 @@ REDACTED
 - domain: members.linode.com
 - options {'rotate': True}
   
-##System
+## System
 * Hostname: REDACTED
 * System:Linux
     - Path: /etc/os-release
