@@ -1,0 +1,6 @@
+{% for svc in ansible_facts['services'] %}
+{% if 'running' in ansible_facts.services[svc]['state'] %}
+- {{ svc }}
+{% else %}
+{% endif %}
+{% endfor %}

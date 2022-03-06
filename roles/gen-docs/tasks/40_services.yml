@@ -1,0 +1,23 @@
+
+
+- name: collect facts about system services
+  service_facts:
+  register: services_state
+
+- name: Debug
+  debug:
+    var: services_state
+
+- name: Insert service.md file
+  ansible.builtin.template:
+    src: services.j2
+    dest: "/auto-gen-docs-ansible/services.md"
+    owner: "root"
+    group: "root"
+    mode: '0740'
+
+- name: Fetch the services.md to ansible-host docs folder 
+  fetch: 
+    src: "/auto-gen-docs-ansible/services.md"
+    dest: "docs/{{ inventory_hostname }}/services.md"
+    flat: yes
