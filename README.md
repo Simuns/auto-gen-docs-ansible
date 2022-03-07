@@ -54,5 +54,42 @@ REDACTED
 - Product Serial: NA
 - UUID: NA
   
+## Services
+
+|Service|Status|Source|State|
+|-------|------|------|-----|
+rsyslog | na | sysv| running |
+systemd-timesyncd.service | enabled | systemd| running |
+getty@tty1.service | unknown | systemd| running |
+serial-getty@ttyS0.service | unknown | systemd| running |
+apparmor | na | sysv| running |
+openvpn | na | sysv| running |
+cron.service | enabled | systemd| running |
+ssh | na | sysv| running |
+dbus | na | sysv| running |
+netfilter-persistent | na | sysv| running |
+ssh.service | enabled | systemd| running |
+udev | na | sysv| running |
+cron | na | sysv| running |
+kmod | na | sysv| running |
+rsyslog.service | enabled | systemd| running |
+docker.service | enabled | systemd| running |
+ufw | na | sysv| running |
+haveged | na | sysv| running |
+sysstat | na | sysv| running |
+docker | na | sysv| running |
+dbus.service | static | systemd| running |
+fail2ban.service | enabled | systemd| running |
+networking | na | sysv| running |
+systemd-logind.service | static | systemd| running |
+openvpn-server@server.service | unknown | systemd| running |
+containerd.service | enabled | systemd| running |
+procps | na | sysv| running |
+fail2ban | na | sysv| running |
+user@1000.service | unknown | systemd| running |
+systemd-udevd.service | static | systemd| running |
+user@1004.service | unknown | systemd| running |
+haveged.service | enabled | systemd| running |
+systemd-journald.service | static | systemd| running |
  
 ## Author: Símun Højgaard Lutzen | simunhojgaard@gmail.com
