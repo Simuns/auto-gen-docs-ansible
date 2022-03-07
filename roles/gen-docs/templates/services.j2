@@ -1,6 +1,20 @@
-{% for svc in ansible_facts['services'] %}
-{% if 'running' in ansible_facts.services[svc]['state'] %}
-- {{ svc }}
+
+|Service|Status|Source|State|
+|-------|------|------|-----|
+{% for svc in ansible_facts['services'].values() %}
+{% if 'running' in svc.state %}
+{{ svc.name }} | {{ svc.status | default('na') }} | {{svc.source}}| {{svc.state}} |
 {% else %}
 {% endif %}
 {% endfor %}
+
+
+
+{#
+{% for svc in ansible_facts['services'] %}
+{% if 'running' in ansible_facts.services[svc]['state'] %}
+- service name: {{ svc }}
+{% else %}
+{% endif %}
+{% endfor %}
+#}
